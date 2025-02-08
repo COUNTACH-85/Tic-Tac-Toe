@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Miniver", serif;
 }
 
 body {
@@ -90,6 +92,7 @@ h1 {
 
 .restart {
     padding: 12px 20px;
+    font-family: Arial, sans-serif;
     font-size: 16px;
     background: linear-gradient(90deg, rgba(15,77,82,1) 0%, rgba(12,44,46,1) 24%, rgba(12,60,65,1) 52%, rgba(8,38,49,1) 85%, rgba(10,78,74,1) 100%);
     color: white;
