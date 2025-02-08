@@ -35,7 +35,6 @@ body {
 h1 {
     margin-bottom: 15px;
     font-size: 32px;
-    font-family: "Kristen ITC";
     color: #ebede9;
 }
 
@@ -66,7 +65,6 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Kristen ITC";
     font-size: 2rem;
     font-weight: bold;
     border: 2px solid #333;
@@ -85,7 +83,6 @@ h1 {
     font-size: 18px;
     margin: 15px 0;
     color: #ebede9;
-    font-family: "Kristen ITC";
     font-weight: bold;
 }
 
