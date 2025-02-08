@@ -7,7 +7,21 @@
 
 body {
     text-align: center;
-    background: #f5f5f5;
+    background: linear-gradient(
+        55deg,
+        hsl(212deg 76% 15%) 0%,
+        hsl(203deg 100% 16%) 7%,
+        hsl(199deg 100% 18%) 16%,
+        hsl(195deg 100% 20%) 25%,
+        hsl(191deg 100% 22%) 35%,
+        hsl(187deg 100% 23%) 46%,
+        hsl(183deg 68% 29%) 58%,
+        hsl(180deg 100% 26%) 69%,
+        hsl(176deg 100% 30%) 78%,
+        hsl(173deg 100% 33%) 86%,
+        hsl(169deg 100% 36%) 91%,
+        hsl(164deg 100% 39%) 96%,
+        hsl(155deg 69% 51%) 100%);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -19,10 +33,11 @@ body {
 h1 {
     margin-bottom: 15px;
     font-size: 32px;
-    color: #333;
+    font-family: "Kristen ITC";
+    color: #ebede9;
 }
 
-/* Game Container */
+
 .game-container {
     display: flex;
     flex-direction: column;
@@ -32,7 +47,7 @@ h1 {
     max-width: 400px;
 }
 
-/* Tic Tac Toe Board */
+
 .board {
     display: grid;
     grid-template-columns: repeat(3, minmax(80px, 1fr));
@@ -42,14 +57,14 @@ h1 {
     max-width: 360px;
 }
 
-/* Individual Cells */
 .cell {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Maintains a square shape */
+    aspect-ratio: 1 / 1; 
     background: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Kristen ITC";
     font-size: 2rem;
     font-weight: bold;
     border: 2px solid #333;
@@ -62,32 +77,34 @@ h1 {
     transform: scale(1.05);
 }
 
-/* Game Status */
+
 .status {
     font-size: 18px;
     margin: 15px 0;
-    color: #333;
+    color: #ebede9;
+    font-family: "Kristen ITC";
     font-weight: bold;
 }
 
-/* Restart Button */
+
 .restart {
     padding: 12px 20px;
     font-size: 16px;
-    background: #007bff;
+    background: linear-gradient(90deg, rgba(15,77,82,1) 0%, rgba(12,44,46,1) 24%, rgba(12,60,65,1) 52%, rgba(8,38,49,1) 85%, rgba(10,78,74,1) 100%);
     color: white;
-    border: none;
+    border: 1px solid white;
     cursor: pointer;
     border-radius: 8px;
     transition: background 0.3s, transform 0.2s;
 }
 
 .restart:hover {
-    background: #0056b3;
+    background: linear-gradient(90deg, rgba(84,37,116,1) 0%, rgba(167,25,144,1) 20%, rgba(204,26,92,1) 53%, rgba(220,83,58,1) 84%, rgba(251,181,52,1) 100%);
     transform: scale(1.1);
+    border: none;
 }
 
-/* 📱 Mobile Optimization */
+
 @media (max-width: 480px) {
     h1 {
         font-size: 24px;
@@ -106,7 +123,7 @@ h1 {
     }
 }
 
-/* 🖥️ Larger Screens */
+
 @media (min-width: 768px) {
     .board {
         grid-template-columns: repeat(3, minmax(100px, 1fr));
